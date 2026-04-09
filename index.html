@@ -2,13 +2,75 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <title>LINK</title>
+    <title>Shinya Linux</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <style>
-     
+       @font-face {
+  font-family: "Renner";
+  src: url("./Renner.ttf") format("truetype");
+  font-display: swap;
+ 
+}
+      body{
+
+        margin:0;
+      }
+     nav {
+      font-family:"Renner";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: #222;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+  nav .logo {
+    font-weight: bold;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* スマホは縦並びにして自然に折れる */
+  @media (max-width: 600px) {
+    nav ul {
+      gap: 10px;
+      font-size: 14px;
+    }
+  }
+
+  body {
+    margin: 0;
+    padding-top: 60px;
+    font-family: sans-serif;
+  }
     </style>
   </head>
   <body>
-
+<nav>
+  <div class="logo">Shinya Linux</div>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Works</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
   </body>
 </html>
